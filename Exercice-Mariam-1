@@ -1,5 +1,5 @@
 n=int(input("Donner le nombre des jours de competition: "))
-while 1<=n<=7 :
+while not 1<=n<=7 :
     n=int(input("Donner le nombre des jours de competition: "))
 s1=0
 s2=0
