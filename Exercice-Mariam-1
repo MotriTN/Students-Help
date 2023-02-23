@@ -3,12 +3,12 @@ while not 1<=n<=7 :
     n=int(input("Donner le nombre des jours de competition: "))
 s1=0
 s2=0
-for i in range (n):
-    o1=int(input("tricotés de 1er ouvrier Jour",i,": "))
-    r1=int(input("défecteux de 1er ouvrier Jour",i,": "))
+for i in range (1,n+1):
+    o1=int(input(f"tricotés de 1er ouvrier Jour {i}: "))
+    r1=int(input(f"défecteux de 1er ouvrier Jour {i}: "))
     s1+=o1-r1
-    o2=int(input("tricotés de 2eme ouvrier Jour",i,": "))
-    r2=int(input("défecteux de 2eme ouvrier Jour",i,": "))
+    o2=int(input(f"tricotés de 2eme ouvrier Jour {i}: "))
+    r2=int(input(f"défecteux de 2eme ouvrier Jour {i}: "))
     s2+=o2-r2
 if s1>s2:
     print("l'ouvrier 1 est le gangnant")
